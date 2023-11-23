@@ -22,6 +22,7 @@ a {
 .btn {
   font-size: 16px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .main {
@@ -31,6 +32,7 @@ a {
   align-items: center;
 }
 .main .info-block {
+  padding: 15px;
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -132,4 +134,41 @@ a {
 }
 .item .info-block .btnHolder .sign_in:hover {
   background-color: rgb(37, 0, 124);
+}
+
+@media screen and (max-width: 2560px) {
+  .item .info-block {
+    width: 500px;
+    padding: 100px;
+  }
+}
+@media screen and (max-width: 1201px) {
+  .item .info-block {
+    gap: 16px;
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 577px) {
+  .item .info-block {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 377px) {
+  body {
+    background: #fff;
+  }
+  .item .info-block {
+    gap: 10px;
+    padding: 15px;
+    box-shadow: none;
+  }
+  .item .info-block .title {
+    font-size: 16px;
+  }
+  .item .info-block label {
+    gap: 16px;
+  }
+  .item .info-block .btnHolder {
+    gap: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

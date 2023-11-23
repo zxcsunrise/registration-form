@@ -23,13 +23,16 @@ a {
 .btn {
     font-size: 16px;
     font-weight: 700;
+    cursor: pointer;
 }
 .main {
+    
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     .info-block {
+        padding: 15px;
         display: flex;
         flex-direction: column;
         gap: 100px;
@@ -137,3 +140,51 @@ a {
         }
     }
 }
+@media screen and (max-width: 2560px) {
+    .item {
+        .info-block {
+            width: 500px;
+            padding: 100px;
+        }
+    }
+    }
+@media screen and (max-width: 1201px) {
+    .item {
+        .info-block {
+            gap: 16px;
+            padding: 60px;
+        }
+    }
+    }
+
+@media screen and (max-width: 577px) {
+        .item {
+            .info-block {
+                padding: 40px;
+            }
+        }
+        }
+
+@media screen and (max-width: 377px) {
+    body {
+        background: $white;
+    }
+   
+            .item {
+                .info-block {
+                    .title {
+                        font-size: 16px;
+                    }
+                    gap: 10px;
+                    padding: 15px;
+                    box-shadow: none;
+                    label {
+                        gap: 16px;
+                    }
+                    .btnHolder {
+                        gap: 10px;
+                    }
+                }
+
+            }
+            }
