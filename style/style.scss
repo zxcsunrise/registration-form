@@ -1,0 +1,47 @@
+$white: #fff;
+$violet: rgb(76, 0, 255);
+$dviolet: rgb(37, 0, 124);
+body {
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    .info-block {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        text-align: center;
+        h2 {
+            font-size: 48px;
+            font-weight: 600;
+            text-align: center;
+            color: $white;
+        }
+        .btn {
+            a {
+                padding: 20px 64px;
+                background-color: $violet;
+                text-decoration: none;
+                color: $white;
+                font-size: 20px;
+                font-weight: 700;
+                border-radius: 10px;
+                transition: all .3s;
+                &:hover {
+                    background-color: $dviolet;
+                }
+            }
+        }
+    }
+}
