@@ -1,6 +1,7 @@
 $white: #fff;
 $violet: rgb(76, 0, 255);
 $dviolet: rgb(37, 0, 124);
+$black: #000; 
 body {
     margin: 0;
     padding: 0;
@@ -9,14 +10,25 @@ body {
     background-image: url('../img/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
+    font-family: 'Inter', sans-serif;
+    
+}
+h2 {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    font-size: 16px;
+    font-weight: 700;
 }
 .main {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Inter', sans-serif;
     .info-block {
         display: flex;
         flex-direction: column;
@@ -31,6 +43,86 @@ body {
         .btn {
             a {
                 padding: 20px 64px;
+                background-color: $violet;
+                text-decoration: none;
+                color: $white;
+                font-size: 20px;
+                font-weight: 700;
+                border-radius: 10px;
+                transition: all .3s;
+                &:hover {
+                    background-color: $dviolet;
+                }
+            }
+        }
+    }
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .info-block {
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        width: 400px;
+        padding: 80px;
+        background-color: $white;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow: inset -5px -4px 1px rgba(0, 0, 0, 0.856);
+        .title {
+            h2 {
+                font-size: 32px;
+                font-weight: 600;
+                text-align: center;
+                color: $black;
+            }
+        }
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 100%;
+            .confirm {
+                display: flex;
+                gap: 2px;
+                align-items: center;
+                .customCheck {
+                    width: 20px;
+                    cursor: pointer;
+                }
+            }
+            input {
+                height: 30px;
+                border: 2px solid #000;
+                border-radius: 10px;
+                padding-left: 12px;
+                font-size: 16px;
+            }
+        }
+        .btnHolder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            span {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                .btn {
+                    background: none;
+                    color: $violet;
+                    transition: all .3s;
+                    &:hover {
+                        color: $dviolet;
+                    }
+                }
+            }
+            .sign_in {
+                padding: 10px 32px;
                 background-color: $violet;
                 text-decoration: none;
                 color: $white;

@@ -7,6 +7,21 @@ body {
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .main {
@@ -14,7 +29,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Inter", sans-serif;
 }
 .main .info-block {
   display: flex;
@@ -39,5 +53,83 @@ body {
   transition: all 0.3s;
 }
 .main .info-block .btn a:hover {
+  background-color: rgb(37, 0, 124);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.item .info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  width: 400px;
+  padding: 80px;
+  background-color: #fff;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: inset -5px -4px 1px rgba(0, 0, 0, 0.856);
+}
+.item .info-block .title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+.item .info-block label {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+.item .info-block label .confirm {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+.item .info-block label .confirm .customCheck {
+  width: 20px;
+  cursor: pointer;
+}
+.item .info-block label input {
+  height: 30px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding-left: 12px;
+  font-size: 16px;
+}
+.item .info-block .btnHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.item .info-block .btnHolder span {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.item .info-block .btnHolder span .btn {
+  background: none;
+  color: rgb(76, 0, 255);
+  transition: all 0.3s;
+}
+.item .info-block .btnHolder span .btn:hover {
+  color: rgb(37, 0, 124);
+}
+.item .info-block .btnHolder .sign_in {
+  padding: 10px 32px;
+  background-color: rgb(76, 0, 255);
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.item .info-block .btnHolder .sign_in:hover {
   background-color: rgb(37, 0, 124);
 }/*# sourceMappingURL=style.css.map */
