@@ -46,7 +46,6 @@ body {
     margin: 0;
     padding: 0;
     color: $black;
-    font-family: $font;
     box-sizing: border-box;
     font-size: var(--fz14);
     font-weight: 400;
@@ -334,3 +333,11 @@ header {
     }
 }
 
+@media screen and (max-width: 330px){
+    .modal-header {
+        flex-direction: column;
+    }
+    .white {
+        font-size: 12px;
+    }
+}

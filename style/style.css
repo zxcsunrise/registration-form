@@ -19,7 +19,6 @@ body {
   margin: 0;
   padding: 0;
   color: #000000;
-  font-family: "Grtsk Peta";
   box-sizing: border-box;
   font-size: var(--fz14);
   font-weight: 400;
@@ -309,4 +308,13 @@ header .header .info-block .item span {
 }
 .modal#infoModal .modal-content .modal-body > .info-block .item .application-block .fb .field-block .recover-pass {
   color: #828B8D;
+}
+
+@media screen and (max-width: 330px) {
+  .modal-header {
+    flex-direction: column;
+  }
+  .white {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
